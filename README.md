@@ -1,5 +1,5 @@
 # 🚀 Déploiement de l'application Express-Tissea sur OpenShift
-
+Yannick/Mathias
 ## 🎯 Objectif
 
 Déployer l'application **Express-Tissea** composée :
