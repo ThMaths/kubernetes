@@ -207,4 +207,6 @@ https://front-route-project-gp-1.apps.openshift.kakor.ovh
 
 ![Capture de l'application](Tissea.png)
 
+# Schéma Draw.io
 
+![Architecture Diagram](./Infrastructure.drawio.svg)
