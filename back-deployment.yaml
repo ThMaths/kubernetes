@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: back-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: back
+  template:
+    metadata:
+      labels:
+        app: back
+    spec:
+      containers:
+        - name: back
+          image: harbor.kakor.ovh/ipi/ipi-grp-1-back
+          ports:
+            - containerPort: 5000
+
+          volumeMounts:
+            - name: sqlite-storage
+              mountPath: /data
+
+      volumes:
+        - name: sqlite-storage
+          persistentVolumeClaim:
+            claimName: sqlite-pvc

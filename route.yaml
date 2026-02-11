@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: front-route
+spec:
+  to:
+    kind: Service
+    name: front-service
+  tls:
+    termination: edge
